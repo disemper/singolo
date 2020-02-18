@@ -1,22 +1,22 @@
 @font-face {
     font-family: Lato;
     font-weight: 300;
-    src: url(../fonts/Lato-Light.woff2);
+    src: url(assets/fonts/Lato-Light.woff2);
 }
 @font-face {
     font-family: Lato;
     font-weight: 400;
-    src: url(../fonts/Lato-Regular.woff2);
+    src: url(assets/fonts/Lato-Regular.woff2);
 }
 @font-face {
     font-family: Lato;
     font-weight: 700;
-    src: url(../fonts/Lato-Bold.woff2);
+    src: url(assets/fonts/Lato-Bold.woff2);
 }
 @font-face {
     font-family: Lato;
     font-weight: 900;
-    src: url(../fonts/Lato-Heavy.woff2);
+    src: url(assets/fonts/Lato-Heavy.woff2);
 }
 
 * {
@@ -149,7 +149,7 @@ html {
 
 .slider-nav__btn::before {
   display: block;
-  content: url("../img/slider-nav-arrow.png");
+  content: url("assets/img/slider-nav-arrow.png");
 }
 
 .slider-nav__btn--next::before {
