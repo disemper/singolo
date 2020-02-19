@@ -275,6 +275,7 @@ html {
   position: relative;
 
   padding-left: 8rem;
+  overflow: hidden;
 }
 
 .service-item__icon {
@@ -293,8 +294,6 @@ html {
 }
 
 .service-item__title {
-  overflow: hidden;
-
   font-weight: 900;
   font-size: 1.8rem;
   line-height: 2.4rem;
