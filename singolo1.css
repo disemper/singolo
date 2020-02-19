@@ -233,6 +233,10 @@ html {
   top: 6.2rem;
   left: 50%;
 
+  width: 18.8rem;
+  height: 33.3rem;
+  object-fit: cover;
+
   border-radius: 0.3rem;
   border: 0.3rem solid #c5c5c5;
   box-sizing: content-box;
