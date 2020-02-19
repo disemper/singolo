@@ -118,12 +118,10 @@ html {
   color: #f06c64;
 }
 
-/*slider*/
-
 .slider {
   position: relative;
 
-  min-height: 60rem;
+  height: 60rem;
 
   background: #f06c64;
   border-bottom: .6rem solid #ea676b;
@@ -163,18 +161,93 @@ html {
   right: 4.1rem;
 }
 
-/*services*/
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 11.2rem;
+}
+
+.device {
+  position: relative;
+  bottom: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45.8rem;
+  width: 21.5rem;
+
+  background: #f2f2f2;
+  border-radius: 2.6rem;
+  box-shadow:
+    2.5rem 2.5rem 0 #ce5d56,
+    2rem 2rem 0 #ce5d56,
+    1.5rem 1.5rem 0 #ce5d56,
+    1rem 1rem 0 #ce5d56,
+    0.5rem 0.5rem 0 #ce5d56;
+}
+
+.device__element {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.device__element--cam {
+  top: 1.6rem;
+
+  width: 1rem;
+  height: 1rem;
+}
+
+.device__element--speaker {
+  top: 3.6rem;
+
+  width: 3.6rem;
+  height: 0.5rem;
+}
+
+.device__element--home {
+  bottom: 0.7rem;
+
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.device--horizontal {
+  transform:  rotate(90deg);
+  right: 14.6rem;
+
+  box-shadow:
+    2.5rem -2.6rem 0 #ce5d56,
+    2rem -2.1rem 0 #ce5d56,
+    1.5rem -1.6rem 0 #ce5d56,
+    1rem -1.1rem 0 #ce5d56,
+    0.5rem -0.6rem 0 #ce5d56;
+}
+
+.device__background {
+  position: absolute;
+  top: 6.2rem;
+  left: 50%;
+
+  border-radius: 0.3rem;
+  border: 0.3rem solid #c5c5c5;
+  box-sizing: content-box;
+  transform: translateX(-50%);
+}
 
 .services {
-  padding: 6.1rem 4rem 7rem;
+  padding: 6.2rem 4rem 6rem;
 
   background: #f2f2f2;
   border-bottom: .6rem solid #ffffff;
-
 }
 
 .services__block-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
 
   font-weight: 900;
   font-size: 3rem;
@@ -185,7 +258,7 @@ html {
 .services__block-desc {
   font-weight: 300;
   font-size: 1.8rem;
-  line-height: 2.9rem;
+  line-height: 3rem;
   color: #767e9e;
   letter-spacing: -0.006rem;
 }
@@ -194,7 +267,7 @@ html {
   display: grid;
   grid-template: auto / repeat(3, 1fr);
   grid-column-gap: 2.2rem;
-  grid-row-gap: 3rem;
+  grid-row-gap: 2.9rem;
   margin-top: 4.2rem;
 }
 
@@ -206,7 +279,7 @@ html {
 
 .service-item__icon {
   position: absolute;
-  top: 0.5rem;
+  top: 0.4rem;
   left: 0;
 
   display: flex;
@@ -220,10 +293,13 @@ html {
 }
 
 .service-item__title {
+  overflow: hidden;
+
   font-weight: 900;
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: #666d89;
+  white-space: nowrap;
 }
 
 .service-item__text {
