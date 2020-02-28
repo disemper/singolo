@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="470.513px" height="470.513px" viewBox="0 0 470.513 470.513" fill="#666d89">
-<g>
-	<path d="M271.521,154.17v-40.541c0-6.086,0.28-10.8,0.849-14.13c0.567-3.335,1.857-6.615,3.859-9.853
-		c1.999-3.236,5.236-5.47,9.706-6.708c4.476-1.24,10.424-1.858,17.85-1.858h40.539V0h-64.809c-37.5,0-64.433,8.897-80.803,26.691
-		c-16.368,17.798-24.551,44.014-24.551,78.658v48.82h-48.542v81.086h48.539v235.256h97.362V235.256h64.805l8.566-81.086H271.521z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 181" width="100" height="181" fill="#656d89">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M0 0L100 0L100 180L0 180Z" />
+		</clipPath>
+	</defs>	
+	<g id="Page 1" clip-path="url(#cp1)">
+		<path id="Path 1" class="shp0" d="M100 31.29L71.43 31.29C68.06 31.29 64.29 35.73 64.29 41.68L64.29 62.31L100 62.31L100 91.71L64.29 91.71L64.29 180L30.57 180L30.57 91.71L0 91.71L0 62.31L30.57 62.31L30.57 45C30.57 20.18 47.79 0 71.43 0L100 0L100 31.29Z" />
+	</g>
 </svg>
