@@ -13,18 +13,18 @@
   line-height: 3rem;
   color: #767e9e;
 
-  letter-spacing: -0.006rem;
+  letter-spacing: -0.021rem;
 }
 
 .portfolio {
-  padding: 6.2rem 4rem 6rem;
+  padding: 6.2rem 4rem 6.7rem;
 
   background: #2d303a;
   border-bottom: .6rem solid #323746;
 }
 
 .portfolio-gallery {
-  margin-top: 1.8rem;
+  margin-top: 1rem;
 }
 
 .filters {
@@ -35,16 +35,17 @@
 }
 
 .filters__item + .filters__item {
-  margin-left: 1rem;
+  margin-left: 1.1rem;
 }
 
 .filters__button {
   height: 2.2rem;
-  padding: 0 0.6rem;
+  padding: 0 0.5rem;
 
   font-size: 1.2rem;
   line-height: 2.2rem;
   color: #767e9e;
+  letter-spacing: 0.005rem;
 
   background: transparent;
   border: 0.1rem solid #666d89;
@@ -64,6 +65,7 @@
 }
 
 .filters__button--active {
+  padding: 0 0.7rem;
   color: #dedede;
 
   border: 0.1rem solid #c5c5c5;
@@ -84,7 +86,7 @@
 }
 
 .about {
-  padding: 6.2rem 4rem 6rem;
+  padding: 6.2rem 4rem 6.7rem;
 
   background: #f2f2f2;
   border-bottom: .6rem solid #ffffff;
@@ -94,7 +96,7 @@
   display: grid;
   grid-template: auto / repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-top: 4.6rem;
+  margin-top: 4.3rem;
 }
 
 .team-item {
@@ -107,7 +109,7 @@
 }
 
 .team-item__name {
-  margin-top: 1.8rem;
+  margin-top: 1.6rem;
   white-space: nowrap;
 
   font-weight: 900;
@@ -117,7 +119,7 @@
 }
 
 .team-item__text {
-  margin-top: 1.5rem;
+  margin-top: 0.7rem;
 
   text-align: justify;
   font-size: 1.2rem;
@@ -127,7 +129,7 @@
 
 .social-icons {
   display: flex;
-  margin-top: 2.6rem;
+  margin-top: 2rem;
 
   list-style-type: none;
 }
