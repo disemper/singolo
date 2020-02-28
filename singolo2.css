@@ -8,6 +8,7 @@
 }
 
 .section-desc {
+  text-align: justify;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 3rem;
