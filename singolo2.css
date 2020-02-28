@@ -45,7 +45,6 @@
   font-size: 1.2rem;
   line-height: 2.2rem;
   color: #767e9e;
-  letter-spacing: 0.005rem;
 
   background: transparent;
   border: 0.1rem solid #666d89;
@@ -123,13 +122,13 @@
 
   text-align: justify;
   font-size: 1.2rem;
-  line-height: 2.2rem;
+  line-height: 2rem;
   color: #767e9e;
 }
 
 .social-icons {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 2.4rem;
 
   list-style-type: none;
 }
