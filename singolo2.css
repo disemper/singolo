@@ -1,0 +1,168 @@
+.section-title {
+  margin-bottom: 1.7rem;
+
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: #666d89;
+}
+
+.section-desc {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #767e9e;
+
+  letter-spacing: -0.006rem;
+}
+
+.portfolio {
+  padding: 6.2rem 4rem 6rem;
+
+  background: #2d303a;
+  border-bottom: .6rem solid #323746;
+}
+
+.portfolio-gallery {
+  margin-top: 1.8rem;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.filters__item + .filters__item {
+  margin-left: 1rem;
+}
+
+.filters__button {
+  height: 2.2rem;
+  padding: 0 0.6rem;
+
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: #767e9e;
+
+  background: transparent;
+  border: 0.1rem solid #666d89;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.filters__button:focus {
+  outline: none;
+}
+.filters__button:hover {
+  color: #9ea1ae;
+
+  border: 0.1rem solid #9ea1ae;
+}
+
+.filters__button--active {
+  color: #dedede;
+
+  border: 0.1rem solid #c5c5c5;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template: auto / repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 1.9rem;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 18.7rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+.about {
+  padding: 6.2rem 4rem 6rem;
+
+  background: #f2f2f2;
+  border-bottom: .6rem solid #ffffff;
+}
+
+.team {
+  display: grid;
+  grid-template: auto / repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 4.6rem;
+}
+
+.team-item {
+  overflow: hidden;
+}
+
+.team-item img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.team-item__name {
+  margin-top: 1.8rem;
+  white-space: nowrap;
+
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #666d89;
+}
+
+.team-item__text {
+  margin-top: 1.5rem;
+
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: #767e9e;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 2.6rem;
+
+  list-style-type: none;
+}
+
+.social-icons__icon + .social-icons__icon {
+  margin-left: 0.8rem;
+}
+
+.social-icons__icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+
+  border: 0.1rem solid #666d89;
+  border-radius: 50%;
+}
+
+.social-icons__icon img {
+  max-height: 1.4rem;
+}
+
+.social-icons__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  font-size: 0;
+  opacity: 0;
+  border-radius: 50%;
+}
