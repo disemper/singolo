@@ -164,6 +164,10 @@ html {
   color: #f48c8f;
 }
 
+.form__button {
+  display: none;
+}
+
 .footer {
   display: flex;
   align-items: center;
