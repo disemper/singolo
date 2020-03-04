@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Lato;
+    font-weight: 300;
+    src: url(assets/fonts/Lato-Light.woff2);
+}
+@font-face {
+    font-family: Lato;
+    font-weight: 400;
+    src: url(assets/fonts/Lato-Regular.woff2);
+}
+@font-face {
+    font-family: Lato;
+    font-weight: 700;
+    src: url(assets/fonts/Lato-Bold.woff2);
+}
+@font-face {
+    font-family: Lato;
+    font-weight: 900;
+    src: url(assets/fonts/Lato-Heavy.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  max-width: 102rem;
+
+  margin: 0 auto;
+}
+
+.section-title {
+  margin-bottom: 1.7rem;
+
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  color: #666d89;
+}
+
+.section-desc {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #767e9e;
+
+  letter-spacing: -0.021rem;
+}
+
+.contacts {
+  padding: 6.2rem 4rem 5.9rem;
+
+  color: #f0d8d9;
+
+  background: #f06c64;
+  border-bottom: .6rem solid #ea676b;
+}
+
+.contacts .section-title, .contacts .section-desc {
+  color: #f0d8d9;
+}
+
+.contacts__content {
+  display: grid;
+  grid-template: auto / 1fr 30rem;
+  grid-gap: 2rem;
+  margin-top: 4.2rem;
+
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: #f0d8d9;
+}
+
+.contacts-info__title {
+  margin-bottom: 0.8rem;
+
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.contacts-info__desc {
+  margin-bottom: 2rem;
+
+  text-align: justify;
+  line-height: 2.15rem;
+}
+
+.contacts-list__item {
+  position: relative;
+
+  padding-left: 2.3rem;
+  list-style-type: none;
+}
+
+.contacts-list__item::before {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+
+  content: '';
+  display: block;
+  width: 1.3rem;
+  height: 1.1rem;
+}
+
+.contacts-list__item a {
+  color: inherit;
+  transition: 0.2s;
+}
+
+.contacts-list__item a:hover {
+  color: white;
+}
+
+.contacts-list__item--phone::before {
+  background: url("assets/img/icon/phone.svg") center center/contain no-repeat;
+}
+.contacts-list__item--location::before {
+  background: url("assets/img/icon/location.svg") center center/contain no-repeat;
+}
+.contacts-list__item--email::before {
+  background: url("assets/img/icon/mail.svg") center center/contain no-repeat;
+}
+
+.form__input, .form__textarea {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.6rem;
+
+  font-size: 1.2rem;
+  color: white;
+
+  border: none;
+  border-radius: 0.5rem;
+  background: #d6564f;
+}
+
+.form__textarea {
+  min-height: 20.2rem;
+  margin-bottom: 0;
+  resize: none;
+
+  font-family: Lato, Arial, sans-serif;
+}
+
+.form__input:focus, .form__textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0.2rem 0.2rem rgba(255, 255, 255, 0.2);
+}
+
+.form__input::placeholder, .form__textarea::placeholder {
+  color: #f48c8f;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 7.6rem;
+  padding: 0 4rem;
+
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #666d89;
+
+  background: #2d303a;
+}
+
+.social-icons {
+  display: flex;
+
+  list-style-type: none;
+}
+
+.social-icons__icon + .social-icons__icon {
+  margin-left: 0.8rem;
+}
+
+.social-icons__icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.social-icons__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  font-size: 0;
+  border-radius: 50%;
+  border: 0.1rem solid #666d89;
+
+  transition: .2s;
+}
+
+.social-icons__link:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0.2rem 0.5rem rgba(102, 109, 137, .4);
+}
+
+.social-icons__link::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  content: '';
+  display: block;
+  height: 1.7rem;
+  width: 1.5rem;
+}
+
+.social-icons__link--facebook::before {
+  background: url("assets/img/icon/facebook.svg") center center/contain no-repeat;
+}
+.social-icons__link--gplus::before {
+  background: url("assets/img/icon/google-plus.svg") center center/contain no-repeat;
+}
+.social-icons__link--twitter::before {
+  background: url("assets/img/icon/twitter.svg") center center/contain no-repeat;
+}
+.social-icons__link--linkedin::before {
+  background: url("assets/img/icon/linkedin.svg") center center/contain no-repeat;
+}
