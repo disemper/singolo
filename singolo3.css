@@ -60,7 +60,7 @@ html {
 }
 
 .contacts {
-  padding: 6.2rem 4rem 5.9rem;
+  padding: 6.2rem 4rem 1.1rem;
 
   color: #f0d8d9;
 
@@ -149,7 +149,7 @@ html {
 
 .form__textarea {
   min-height: 20.2rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   resize: none;
 
   font-family: Lato, Arial, sans-serif;
@@ -165,7 +165,21 @@ html {
 }
 
 .form__button {
-  display: none;
+  height: 3.8rem;
+  width: 15rem;
+
+  color: #494e62;
+
+  border: none;
+  border-radius: 0.5rem;
+  background: #f7eded;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.form__button:hover {
+  background: white;
 }
 
 .footer {
