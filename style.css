@@ -60,7 +60,12 @@ html {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
   display: flex;
+  width: 102rem;
   height: 9.5rem;
   align-items: center;
   justify-content: space-between;
@@ -141,6 +146,7 @@ html {
   position: relative;
 
   height: 60rem;
+  margin-top: 9.5rem;
 
   background: #f06c64;
   border-bottom: .6rem solid #ea676b;
@@ -233,6 +239,21 @@ html {
 
   width: 4.5rem;
   height: 4.5rem;
+
+  cursor: pointer;
+}
+
+.device__element--screen {
+  position: absolute;
+  top: 6.2rem;
+
+  width: 18.8rem;
+  height: 33.3rem;
+
+  border-radius: 0.3rem;
+  border: 0.3rem solid #c5c5c5;
+  box-sizing: content-box;
+  background: #000000;
 }
 
 .device--horizontal {
@@ -248,18 +269,18 @@ html {
 }
 
 .device__background {
-  position: absolute;
-  top: 6.2rem;
-  left: 50%;
-
-  width: 18.8rem;
-  height: 33.3rem;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 
-  border-radius: 0.3rem;
-  border: 0.3rem solid #c5c5c5;
-  box-sizing: content-box;
-  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.device__background--hidden {
+  opacity: 0;
+  transform: scale(0.5, 0);
 }
 
 .services {
@@ -363,8 +384,7 @@ html {
   border: 0.1rem solid #9ea1ae;
 }
 
-.filters__button--active {
-  padding: 0 0.7rem;
+.filters__button--active, .filters__button--active:hover {
   color: #dedede;
 
   border: 0.1rem solid #c5c5c5;
@@ -379,6 +399,9 @@ html {
 
 .portfolio-item {
   overflow: hidden;
+}
+.portfolio-item--active {
+  outline: 0.5rem solid #f06c64
 }
 
 .portfolio-item:hover img {
@@ -664,4 +687,103 @@ html {
 
   background: #494e62;
   border-radius: 50%;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+
+  display: none;
+  width: 40rem;
+  padding: 4rem;
+
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal__button {
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.modal__button:focus {
+  outline: none;
+}
+
+.button--ok {
+  height: 3.8rem;
+  width: 15rem;
+
+  border-radius: 0.5rem;
+  background: #f06c64;
+  color: #ffffff;
+}
+
+.button--ok:hover {
+  background: #ed6860;
+}
+
+.button--close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+
+  font-size: 0;
+  background: transparent;
+}
+.button--close::before, .button--close::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: .2rem;
+
+  background: #2d303a;
+}
+.button--close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.button--close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal__result {
+  margin-bottom: 1.6rem;
+  list-style-type: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(45, 48, 58, 0.3);
+}
+
+.overlay--visible {
+  display: block;
 }

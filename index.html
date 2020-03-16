@@ -17,18 +17,18 @@
     </h1>
     <nav>
       <ul class="main-menu">
-        <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#">Home</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">Services</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">Portfolio</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">About</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">Contact</a></li>
+        <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#slider">Home</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#services">Services</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#portfolio">Portfolio</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#about">About</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#contacts">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <section class="slider">
+    <section class="slider" id="slider">
 
       <div class="slide">
         <div class="device">
@@ -44,7 +44,9 @@
             <rect width="17" height="17" x="14" y="14" rx="4" ry="4" fill="#c5c5c5"/>
             <rect width="13" height="13" x="16" y="16" rx="3" ry="3" fill="#fafafa"/>
           </svg>
-          <img class="device__background" src="assets/img/mobile-bg-1.jpg" width="188" height="333" alt="background">
+          <div class="device__element device__element--screen">
+            <img class="device__background" src="assets/img/mobile-bg-1.jpg" width="188" height="333" alt="background">
+          </div>
         </div>
 
         <div class="device device--horizontal">
@@ -60,7 +62,9 @@
             <rect width="17" height="17" x="14" y="14" rx="4" ry="4" fill="#c5c5c5"/>
             <rect width="13" height="13" x="16" y="16" rx="3" ry="3" fill="#fafafa"/>
           </svg>
-          <img class="device__background" src="assets/img/mobile-bg-2.jpg" width="188" height="333" alt="background">
+          <div class="device__element device__element--screen">
+            <img class="device__background" src="assets/img/mobile-bg-2.jpg" width="188" height="333" alt="background">
+          </div>
         </div>
       </div>
 
@@ -71,7 +75,7 @@
 
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <h2 class="section-title">Our Services</h2>
 
       <p class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -126,7 +130,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2 class="section-title">Portfolio</h2>
       <p class="section-desc">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 
@@ -183,21 +187,12 @@
           <figure class="portfolio-item">
             <img src="assets/img/portfolio/portfolio-12.jpg" alt="portfolio work-12">
           </figure>
-          <figure class="portfolio-item">
-            <img src="assets/img/portfolio/portfolio-12.jpg" alt="portfolio work-12">
-          </figure>
-          <figure class="portfolio-item">
-            <img src="assets/img/portfolio/portfolio-12.jpg" alt="portfolio work-12">
-          </figure>
-          <figure class="portfolio-item">
-            <img src="assets/img/portfolio/portfolio-12.jpg" alt="portfolio work-12">
-          </figure>
         </div>
 
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2 class="section-title">About Us</h2>
       <p class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
                                    non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
@@ -265,7 +260,7 @@
 
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2 class="section-title">Get a Quote</h2>
       <p class="section-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
                               commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
@@ -324,5 +319,19 @@
 
 </div>
 
+<div class="overlay"></div>
+<div class="modal">
+  <div class="modal__content">
+    <ul class="modal__result">
+      <li>Какой то текст</li>
+      <li>Какой то текст</li>
+      <li>Какой то текст</li>
+    </ul>
+  </div>
+  <button class="modal__button button--ok">OK</button>
+  <button class="modal__button button--close">close</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
