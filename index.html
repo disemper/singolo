@@ -30,6 +30,43 @@
 
     <section class="slider" id="slider">
 
+      <div class="slide slide--active">
+        <div class="device">
+          <svg class="device__element device__element--cam">
+            <circle r="5" cy="50%" cx="50%" fill="#d8d8d8"/>
+            <circle r="2" cy="50%" cx="50%" fill="#eb5055"/>
+          </svg>
+          <svg class="device__element device__element--speaker">
+            <rect width="36" height="5" x="0" y="0" rx="3" ry="3" fill="#acacac"/>
+          </svg>
+          <svg class="device__element device__element--home">
+            <circle r="21" cy="50%" cx="50%" fill="#fafafa"/>
+            <rect width="17" height="17" x="14" y="14" rx="4" ry="4" fill="#c5c5c5"/>
+            <rect width="13" height="13" x="16" y="16" rx="3" ry="3" fill="#fafafa"/>
+          </svg>
+          <div class="device__element device__element--screen">
+            <img class="device__background" src="assets/img/mobile-bg-1.jpg" width="188" height="333" alt="background">
+          </div>
+        </div>
+
+        <div class="device device--horizontal">
+          <svg class="device__element device__element--cam">
+            <circle r="5" cy="50%" cx="50%" fill="#d8d8d8"/>
+            <circle r="2" cy="50%" cx="50%" fill="#eb5055"/>
+          </svg>
+          <svg class="device__element device__element--speaker">
+            <rect width="36" height="5" x="0" y="0" rx="3" ry="3" fill="#acacac"/>
+          </svg>
+          <svg class="device__element device__element--home">
+            <circle r="21" cy="50%" cx="50%" fill="#fafafa"/>
+            <rect width="17" height="17" x="14" y="14" rx="4" ry="4" fill="#c5c5c5"/>
+            <rect width="13" height="13" x="16" y="16" rx="3" ry="3" fill="#fafafa"/>
+          </svg>
+          <div class="device__element device__element--screen">
+            <img class="device__background" src="assets/img/mobile-bg-2.jpg" width="188" height="333" alt="background">
+          </div>
+        </div>
+      </div>
       <div class="slide">
         <div class="device">
           <svg class="device__element device__element--cam">
@@ -322,13 +359,12 @@
 <div class="overlay"></div>
 <div class="modal">
   <div class="modal__content">
-    <ul class="modal__result">
-      <li>Какой то текст</li>
-      <li>Какой то текст</li>
-      <li>Какой то текст</li>
-    </ul>
+    <p class="modal__title">The letter was sent </p>
+    <ul class="modal__result"></ul>
   </div>
-  <button class="modal__button button--ok">OK</button>
+  <div class="modal__footer">
+    <button class="modal__button button--ok">OK</button>
+  </div>
   <button class="modal__button button--close">close</button>
 </div>
 

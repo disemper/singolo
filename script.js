@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         modalClose = document.querySelector('.modal__button.button--close');
         overlay = document.querySelector('.overlay');
         filtersItems = document.querySelectorAll('.filters__item');
+        formResult = document.querySelector('.modal__result');
 
 
   //menu - set active and scroll
@@ -72,12 +73,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
+    const data = new FormData(this);
+    values = {
+      Subject: data.get('subject'),
+      Description: data.get('message'),
+    };
+
+    for (let key in values) {
+      const element = document.createElement('li');
+      element.textContent = (values[key]) ? key + ': ' + values[key] : 'Without ' + key.toLowerCase();
+      formResult.append(element);
+    }
+
     showModal(modal);
+    this.reset();
   });
 
   [modalOk, modalClose, overlay].forEach(function (elem) {
     elem.addEventListener('click', function () {
       hideModal(modal);
+      clearModal(modal);
     });
   });
 
@@ -88,6 +103,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function hideModal(modal) {
     modal.classList.remove('modal--active');
     overlay.classList.remove('overlay--visible');
+  }
+  function clearModal(modal) {
+    modal.querySelector('.modal__result').innerHTML = "";
   }
 
 });

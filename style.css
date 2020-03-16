@@ -187,11 +187,14 @@ html {
 }
 
 .slide {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   height: 100%;
   padding: 0 11.2rem;
+}
+.slide--active {
+  display: flex;
 }
 
 .device {
@@ -701,7 +704,7 @@ html {
 
   display: none;
   width: 40rem;
-  padding: 4rem;
+  padding: 4rem 4rem 2rem;
 
   border-radius: 0.5rem;
   background: white;
@@ -711,10 +714,22 @@ html {
   display: block;
 }
 
+.modal__title {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  text-align: center;
+}
+
+.modal__footer {
+  text-align: center;
+}
+
 .modal__button {
   border: none;
   cursor: pointer;
   transition: 0.2s;
+  margin: 0 auto;
 }
 .modal__button:focus {
   outline: none;
@@ -767,7 +782,7 @@ html {
 }
 
 .modal__result {
-  margin-bottom: 1.6rem;
+  margin: 1.6rem 0;
   list-style-type: none;
 }
 
